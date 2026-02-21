@@ -474,9 +474,19 @@ AideScript_GivePotion:
 	opentext
 	writetext AideText_GiveYouPotion
 	promptbutton
-	verbosegiveitem POTION
+	verbosegiveitem POTION, 15
 	writetext AideText_AlwaysBusy
 	waitbutton
+	writetext AideText_GiveYouBalls
+	promptbutton
+	getitemname STRING_BUFFER_4, POKE_BALL
+	scall AideScript_ReceiveTheBalls
+	giveitem POKE_BALL, 30
+	setflag ENGINE_POKEDEX
+	writetext AideDex_GetDexText
+	playsound SFX_ITEM
+	waitsfx
+	promptbutton
 	closetext
 	setscene SCENE_ELMSLAB_NOOP
 	end
@@ -501,10 +511,15 @@ AideScript_GiveYouBalls:
 	promptbutton
 	getitemname STRING_BUFFER_4, POKE_BALL
 	scall AideScript_ReceiveTheBalls
-	giveitem POKE_BALL, 5
+	giveitem POKE_BALL, 30
 	writetext AideText_ExplainBalls
 	promptbutton
 	itemnotify
+	setflag ENGINE_POKEDEX
+	writetext AideDex_GetDexText
+	playsound SFX_ITEM
+	waitsfx
+	promptbutton
 	closetext
 	setscene SCENE_ELMSLAB_NOOP
 	end
@@ -817,7 +832,7 @@ ElmText_MissionFromMrPokemon:
 	para "I want you to go"
 	line "and find out"
 
-	para "what it is!"
+	para "what it is"
 	line "My assistant will"
 
 	para "give you every-"
@@ -1256,7 +1271,7 @@ AideText_GiveYouBalls:
 	text "<PLAY_G>!"
 
 	para "Use these on your"
-	line "#DEX quest!"
+	line "little adventure!"
 	done
 
 AideText_ExplainBalls:
@@ -1366,6 +1381,11 @@ ElmsLabPCText:
 
 	para "…It says on the"
 	line "screen…"
+	done
+
+AideDex_GetDexText:
+    text "<PLAYER> received"
+	line "#DEX!"
 	done
 
 ElmsLab_MapEvents:
