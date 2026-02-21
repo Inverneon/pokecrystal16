@@ -801,39 +801,35 @@ ElmText_GotAnEmail:
 ElmText_MissionFromMrPokemon:
 	text "Hey, listen."
 
-	para "I have an acquain-"
-	line "tance called MR."
-	cont "#MON."
+	para "I have a job for"
+	line "you."
 
-	para "He keeps finding"
-	line "weird things and"
+	para "I was just told"
+	line "about some sort of"
 
-	para "raving about his"
-	line "discoveries."
+	para "extremely rare"
+	line "Pokemon"
 
-	para "Anyway, I just got"
-	line "an e-mail from him"
+	para "in the lake of"
+	line "Rage."
+    cont "This could be big!"
 
-	para "saying that this"
-	line "time it's real."
+	para "I want you to go"
+	line "and find out"
 
-	para "It is intriguing,"
-	line "but we're busy"
+	para "what it is!"
+	line "My assistant will"
 
-	para "with our #MON"
-	line "research…"
+	para "give you every-"
+	line "thing you need"
 
-	para "Wait!"
-
-	para "I know!"
-
-	para "<PLAY_G>, can you"
-	line "go in our place?"
+	para "for the long treck"
+	line "to that lake."
 	done
 
 ElmText_ChooseAPokemon:
-	text "I want you to"
-	line "raise one of the"
+	text "Here I want you to"
+	line "take one of the"
 
 	para "#MON contained"
 	line "in these BALLS."
@@ -896,19 +892,19 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "MR.#MON lives a"
-	line "little bit beyond"
+	text "You can get to the"
+	line "lake by going up"
 
-	para "CHERRYGROVE, the"
-	line "next city over."
+	para "the moutain, from"
+	line "blackthorn."
 
-	para "It's almost a"
-	line "direct route"
+	para "go to Ice cave"
+	line "and the lake will"
 
-	para "there, so you"
-	line "can't miss it."
+	para "be straight north"
+	line "from mohagony."
 
-	para "But just in case,"
+	para "Just in case,"
 	line "here's my phone"
 
 	para "number. Call me if"

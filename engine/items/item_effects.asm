@@ -1279,9 +1279,11 @@ RareCandyEffect:
 	ld a, MON_LEVEL
 	call GetPartyParamLocation
 
+	ld a, [wLevelCap]
+	ld b, a
 	ld a, [hl]
 	cp MAX_LEVEL
-	jp nc, NoEffectMessage
+	cp b
 
 	inc a
 	ld [hl], a

@@ -35,7 +35,7 @@ BlackthornSuperNerdScript:
 	opentext
 	checkevent EVENT_BEAT_CLAIR
 	iftrue .BeatClair
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_BEAT_FALKNER
 	iftrue .ClearedRadioTower
 	writetext Text_ClairIsOut
 	waitbutton
@@ -143,29 +143,32 @@ BlackthornCityMartSign:
 	jumpstd MartSignScript
 
 Text_ClairIsOut:
-	text "I am sorry."
+	text "Hold on."
 
-	para "CLAIR, our GYM"
-	line "LEADER, entered"
+	para "You got no GYM"
+	line "BADGES? Oh no."
 
-	para "the DRAGON'S DEN"
-	line "behind the GYM."
+	para "Yeah theres no"
+	line "way I'm letting."
 
-	para "I have no idea"
-	line "when our LEADER"
-	cont "will return."
+	para "You waste Clair's"
+	line "time with your"
+
+	para "Weak pokemon come"
+	line "back when"
+
+	para "You're a little"
+	line "hmmmmm"
+	cont "stronger."
 	done
 
 Text_ClairIsIn:
-	text "CLAIR, our GYM"
-	line "LEADER, is waiting"
-	cont "for you."
-
-	para "However, it would"
-	line "be impossible for"
-
-	para "a run-of-the-mill"
-	line "trainer to win."
+	text "Look at that"
+	line "Seven gym badges."
+	
+	para "but I want to"
+    line "test you MYSELF."
+	cont "Get Ready!"
 	done
 
 Text_ClairIsBeaten:
