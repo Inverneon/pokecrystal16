@@ -40,7 +40,7 @@ Moves1:
 	move EFFECT_LEECH_HIT,          75, GHOST,         100, 20,   0      ;BIND
 	move EFFECT_NORMAL_HIT,         80, NORMAL,         75, 20,   0      ;SLAM
 	move EFFECT_NORMAL_HIT,         35, GRASS,         100, 10,   0      ;VINE_WHIP
-	move EFFECT_STOMP,              65, NORMAL,        100, 20,  30      ;STOMP
+	move EFFECT_STOMP,              65, GROUND,        100, 20,  30      ;STOMP
 	move EFFECT_DOUBLE_HIT,         30, FIGHTING,      100, 30,   0      ;DOUBLE_KICK
 	move EFFECT_NORMAL_HIT,        120, NORMAL,         75,  5,   0      ;MEGA_KICK
 	move EFFECT_JUMP_KICK,          70, FIGHTING,       95, 25,   0      ;JUMP_KICK
@@ -171,7 +171,7 @@ Moves1:
 	move EFFECT_DEFENSE_UP_2,        0, POISON,        100, 40,   0      ;ACID_ARMOR
 	move EFFECT_NORMAL_HIT,        120, WATER,          90, 10,   0      ;CRABHAMMER
 	move EFFECT_SELFDESTRUCT,      250, NORMAL,        100,  5,   0      ;EXPLOSION
-	move EFFECT_MULTI_HIT,          18, NORMAL,         80, 15,   0      ;FURY_SWIPES
+	move EFFECT_MULTI_HIT,          30, DARK,           90, 15,   0      ;FURY_SWIPES
 	move EFFECT_DOUBLE_HIT,         50, GROUND,        100, 10,   0      ;BONEMERANG
 	move EFFECT_HEAL,                0, PSYCHIC_TYPE,  100, 10,   0      ;REST
 	move EFFECT_FLINCH_HIT,         75, ROCK,          100, 10,  30      ;ROCK_SLIDE
