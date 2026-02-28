@@ -29,7 +29,7 @@ Moves1:
 	move EFFECT_PARALYZE_HIT,       75, ELECTRIC,      100, 15,  10      ;THUNDERPUNCH
 	move EFFECT_NORMAL_HIT,         40, NORMAL,        100, 35,   0      ;SCRATCH
 	move EFFECT_NORMAL_HIT,         80, BUG,           100, 30,   0      ;VICEGRIP
-	move EFFECT_NORMAL_HIT,        130, BUG,           130,  5,   0      ;GUILLOTINE
+	move EFFECT_NORMAL_HIT,        130, BUG,            80,  5,   0      ;GUILLOTINE
 	move EFFECT_RAZOR_WIND,         80, NORMAL,         75, 10,   0      ;RAZOR_WIND
 	move EFFECT_ATTACK_UP_2,         0, NORMAL,        100, 30,   0      ;SWORDS_DANCE
 	move EFFECT_NORMAL_HIT,         50, NORMAL,        100, 30,   0      ;CUT
@@ -39,7 +39,7 @@ Moves1:
 	move EFFECT_FLY,                70, FLYING,         95, 15,   0      ;FLY
 	move EFFECT_LEECH_HIT,          75, GHOST,         100, 20,   0      ;BIND
 	move EFFECT_NORMAL_HIT,         80, NORMAL,         75, 20,   0      ;SLAM
-	move EFFECT_NORMAL_HIT,         35, GRASS,         100, 10,   0      ;VINE_WHIP
+	move EFFECT_NORMAL_HIT,         45, GRASS,         100, 10,   0      ;VINE_WHIP
 	move EFFECT_STOMP,              65, GROUND,        100, 20,  30      ;STOMP
 	move EFFECT_DOUBLE_HIT,         30, FIGHTING,      100, 30,   0      ;DOUBLE_KICK
 	move EFFECT_NORMAL_HIT,        120, NORMAL,         75,  5,   0      ;MEGA_KICK
@@ -83,7 +83,7 @@ Moves1:
 	move EFFECT_HYPER_BEAM,        150, NORMAL,         90,  5,   0      ;HYPER_BEAM
 	move EFFECT_NORMAL_HIT,         45, FLYING,        100, 35,   0      ;PECK
 	move EFFECT_NORMAL_HIT,         80, FLYING,        100, 20,   0      ;DRILL_PECK
-	move EFFECT_RECOIL_HIT,         80, FIGHTING,       80, 25,   0      ;SUBMISSION
+	move EFFECT_RECOIL_HIT,        100, FIGHTING,      100, 25,   0      ;SUBMISSION
 	move EFFECT_FLINCH_HIT,         50, FIGHTING,       90, 20,  30      ;LOW_KICK
 	move EFFECT_COUNTER,             1, FIGHTING,      100, 20,   0      ;COUNTER
 	move EFFECT_LEVEL_DAMAGE,        1, FIGHTING,      100, 20,   0      ;SEISMIC_TOSS
@@ -255,7 +255,7 @@ Moves1:
 	move EFFECT_SYNTHESIS,           0, GRASS,         100,  5,   0      ;SYNTHESIS
 	move EFFECT_MOONLIGHT,           0, NORMAL,        100,  5,   0      ;MOONLIGHT
 	move EFFECT_HIDDEN_POWER,        1, NORMAL,        100, 15,   0      ;HIDDEN_POWER
-	move EFFECT_NORMAL_HIT,        100, FIGHTING,       85,  5,   0      ;CROSS_CHOP
+	move EFFECT_NORMAL_HIT,        110, FIGHTING,       85,  5,   0      ;CROSS_CHOP
 	move EFFECT_TWISTER,            60, DRAGON,        100, 20,  20      ;TWISTER
 	move EFFECT_RAIN_DANCE,          0, WATER,          90,  5,   0      ;RAIN_DANCE
 	move EFFECT_SUNNY_DAY,           0, FIRE,           90,  5,   0      ;SUNNY_DAY
