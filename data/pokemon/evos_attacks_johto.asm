@@ -1195,15 +1195,21 @@ TyrogueEvosAttacks:
 
 HitmontopEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, ROLLING_KICK
+	dbw 1, QUICK_ATTACK
 	dbw 7, FOCUS_ENERGY
-	dbw 13, PURSUIT
-	dbw 19, QUICK_ATTACK
-	dbw 25, RAPID_SPIN
-	dbw 31, COUNTER
-	dbw 37, AGILITY
-	dbw 43, DETECT
-	dbw 49, TRIPLE_KICK
+	dbw 20, ROLLING_KICK
+	dbw 20, RAPID_SPIN
+	dbw 24, PURSUIT
+	dbw 28, RECOVER
+	dbw 30, MACH_PUNCH
+	dbw 33, TRIPLE_KICK
+	dbw 36, DIG
+	dbw 40, COUNTER
+	dbw 44, SUBMISSION
+	dbw 49, SWORDS_DANCE
+	dbw 53, HORN_DRILL
+	dbw 58, HI_JUMP_KICK
+	dbw 64, MEGAHORN
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
