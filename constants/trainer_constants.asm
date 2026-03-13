@@ -68,6 +68,10 @@ DEF KRIS EQU __trainer_class__
 	const RIVAL1_5_CHIKORITA
 	const RIVAL1_5_CYNDAQUIL
 	const RIVAL1_5_TOTODILE
+	const RIVAL1_6_CHIKORITA
+	const RIVAL1_6_CYNDAQUIL
+	const RIVAL1_6_TOTODILE
+
 
 	trainerclass POKEMON_PROF ; a
 

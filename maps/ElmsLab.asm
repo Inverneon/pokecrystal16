@@ -209,7 +209,7 @@ TotodilePokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke TOTODILE, 5, BERRY
+	givepoke HITMONTOP, 65, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -482,6 +482,7 @@ AideScript_GivePotion:
 	getitemname STRING_BUFFER_4, POKE_BALL
 	scall AideScript_ReceiveTheBalls
 	giveitem POKE_BALL, 30
+	scall AideScript_GivePocketReminder
 	setflag ENGINE_POKEDEX
 	writetext AideDex_GetDexText
 	playsound SFX_ITEM
@@ -489,6 +490,10 @@ AideScript_GivePotion:
 	promptbutton
 	closetext
 	setscene SCENE_ELMSLAB_NOOP
+	end
+
+AideScript_GivePocketReminder:
+	giveitem PCKT_REMIND
 	end
 
 AideScript_WalkBalls1:

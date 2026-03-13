@@ -485,24 +485,41 @@ PikachuEvosAttacks:
 	dbbw EVOLVE_ITEM, THUNDERSTONE, RAICHU
 	db 0 ; no more evolutions
 	dbw 1, THUNDERSHOCK
-	dbw 1, GROWL
+	dbw 1, CHARM
 	dbw 6, TAIL_WHIP
-	dbw 8, THUNDER_WAVE
-	dbw 11, QUICK_ATTACK
-	dbw 15, DOUBLE_TEAM
-	dbw 20, SLAM
-	dbw 26, THUNDERBOLT
-	dbw 33, AGILITY
-	dbw 41, THUNDER
-	dbw 50, LIGHT_SCREEN
+	dbw 8, QUICK_ATTACK
+	dbw 12, THUNDER_WAVE
+	dbw 16, SPARK
+	dbw 20, DIG
+	dbw 24, SWEET_KISS
+	dbw 28, THUNDERBOLT
+	dbw 32, LIGHT_SCREEN
+	dbw 36, MAGNITUDE
+	dbw 40, ENCORE
+	dbw 44, BODY_SLAM
+	dbw 48, IRON_TAIL
+	dbw 52, EARTHQUAKE
+	dbw 58, THUNDER
 	db 0 ; no more level-up moves
 
 RaichuEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, THUNDERSHOCK
-	dbw 1, TAIL_WHIP
-	dbw 1, QUICK_ATTACK
-	dbw 1, THUNDERBOLT
+	dbw 1, CHARM
+	dbw 6, TAIL_WHIP
+	dbw 8, QUICK_ATTACK
+	dbw 12, THUNDER_WAVE
+	dbw 16, SPARK
+	dbw 20, DIG
+	dbw 24, SWEET_KISS
+	dbw 28, THUNDERBOLT
+	dbw 32, LIGHT_SCREEN
+	dbw 36, MAGNITUDE
+	dbw 40, ENCORE
+	dbw 44, BODY_SLAM
+	dbw 48, IRON_TAIL
+	dbw 52, EARTHQUAKE
+	dbw 58, THUNDER
 	db 0 ; no more level-up moves
 
 SandshrewEvosAttacks:

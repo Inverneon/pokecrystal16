@@ -13,14 +13,24 @@ DarkCaveVioletEntrance_MapScripts:
 
 	def_callbacks
 
+TrainerSwimmerLisa:
+	trainer SWIMMERF, LISA , EVENT_BEAT_SWIMMERF_LISA, SwimmerFLisaseenText, SwimmerFLisaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SwimmerFLisaAfterText
+	waitbutton
+	closetext
+
 DarkCaveVioletEntrancePotion:
-	itemball POTION
+	itemball MOON_STONE
 
 DarkCaveVioletEntranceFullHeal:
 	itemball FULL_HEAL
 
 DarkCaveVioletEntranceHyperPotion:
-	itemball HYPER_POTION
+	itemball RARE_CANDY
 
 DarkCaveVioletEntranceDireHit:
 	itemball DIRE_HIT
@@ -30,6 +40,38 @@ DarkCaveVioletEntranceRock:
 
 DarkCaveVioletEntranceHiddenElixer:
 	hiddenitem ELIXER, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HIDDEN_ELIXER
+
+SwimmerFLisaseenText:
+	text "I was just about"
+	line "To go for a swim"
+	cont "...what?"
+
+	para "It's not that"
+	line "weird to swim in a"
+	cont "Cave!"
+
+	para "Come on let me"
+	line "show you the how"
+	cont "strong"
+
+	para "My pokemon are"
+	line "from swimming here"
+	done
+
+SwimmerFLisaBeatenText:
+	text "Okay maybe I"
+	line "shouldn't swim"
+	cont "here."
+	done
+
+SwimmerFLisaAfterText:
+	text "I could try"
+	line "swimming in the"
+
+	para "Ice Path instead."
+	line "what do you mean"
+    cont "that's worse!"
+	done
 
 DarkCaveVioletEntrance_MapEvents:
 	db 0, 0 ; filler
@@ -46,10 +88,11 @@ DarkCaveVioletEntrance_MapEvents:
 
 	def_object_events
 	object_event  6,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntrancePotion, EVENT_DARK_CAVE_VIOLET_ENTRANCE_POTION
-	object_event 14, 15, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
+	object_event 19, 24, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
 	object_event 27,  6, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
 	object_event 18, 25, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
 	object_event 19, 25, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DarkCaveVioletEntranceRock, -1
-	object_event 14, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceFullHeal, EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
+	object_event 18, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceFullHeal, EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
 	object_event 35,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceHyperPotion, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HYPER_POTION
 	object_event 30, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceDireHit, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DIRE_HIT
+	object_event  5, 23, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerSwimmerLisa, -1

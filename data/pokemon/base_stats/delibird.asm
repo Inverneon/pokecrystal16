@@ -1,6 +1,6 @@
 	db 0 ; species ID placeholder
 
-	db  45,  55,  45,  75,  65,  45
+	db  45,  65,  45, 125,  80,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, FLYING ; type

@@ -73,6 +73,46 @@ RocketBaseRival:
 	writetext RocketBaseRivalText
 	waitbutton
 	closetext
+	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+	iftrue .Totodile
+	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+	iftrue .Chikorita
+	setlasttalked TEAMROCKETBASEB3F_RIVAL
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	playsound SFX_TACKLE
+	applymovement PLAYER, RocketBaseRivalShovesPlayerMovement
+	applymovement TEAMROCKETBASEB3F_RIVAL, RocketBaseRivalLeavesMovement
+	disappear TEAMROCKETBASEB3F_RIVAL
+	setscene SCENE_TEAMROCKETBASEB3F_ROCKET_BOSS
+	special RestartMapMusic
+	end
+
+.Totodile:
+	winlosstext RivalCherrygroveWinText, RivalCherrygroveLossText
+	setlasttalked CHERRYGROVECITY_RIVAL
+	loadtrainer RIVAL1, RIVAL1_1_CHIKORITA
+	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	playsound SFX_TACKLE
+	applymovement PLAYER, RocketBaseRivalShovesPlayerMovement
+	applymovement TEAMROCKETBASEB3F_RIVAL, RocketBaseRivalLeavesMovement
+	disappear TEAMROCKETBASEB3F_RIVAL
+	setscene SCENE_TEAMROCKETBASEB3F_ROCKET_BOSS
+	special RestartMapMusic
+	end
+
+.Chikorita:
+	winlosstext RivalCherrygroveWinText, RivalCherrygroveLossText
+	setlasttalked CHERRYGROVECITY_RIVAL
+	loadtrainer RIVAL1, RIVAL1_1_CYNDAQUIL
+	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
 	playsound SFX_TACKLE
 	applymovement PLAYER, RocketBaseRivalShovesPlayerMovement
 	applymovement TEAMROCKETBASEB3F_RIVAL, RocketBaseRivalLeavesMovement
@@ -342,45 +382,29 @@ TeamRocketBaseB3FRocketText:
 	done
 
 RocketBaseRivalText:
-	text "…"
+	text "Who are you?"
 
-	para "Didn't I tell you"
-	line "that I was going"
+	para "Don't tell me"
+	line "you're also here"
 
 	para "to destroy TEAM"
-	line "ROCKET?"
+	line "ROCKET"
 
-	para "…Tell me, who was"
-	line "the guy in the"
+	para "You look way too"
+	line "weak for that"
 
-	para "cape who used"
-	line "dragon #MON?"
+	para "You and you're"
+	line "Pathetic excuse"
 
-	para "My #MON were no"
-	line "match at all."
+	para "for a partner will"
+	line "get stomped."
 
-	para "I don't care that"
-	line "I lost. I can beat"
+	para "Don't worry I'll"
+	line "help you."
 
-	para "him by getting"
-	line "stronger #MON."
-
-	para "It's what he said"
-	line "that bothers me…"
-
-	para "He told me that"
-	line "I don't love and"
-
-	para "trust my #MON"
-	line "enough."
-
-	para "I'm furious that I"
-	line "lost to a bleeding"
-	cont "heart like him."
-
-	para "…Humph! I don't"
-	line "have the time for"
-	cont "the likes of you!"
+	para "By beating you so"
+	line "bad you never throw"
+	cont "a pokeball again!"
 	done
 
 ExecutiveM4BeforeText:

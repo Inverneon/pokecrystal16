@@ -58,7 +58,7 @@ Moves1:
 	move EFFECT_RECOIL_HIT,        120, NORMAL,        100, 15,   0      ;DOUBLE_EDGE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;TAIL_WHIP
 	move EFFECT_POISON_HIT,         45, POISON,        100, 35,  30      ;POISON_STING
-	move EFFECT_POISON_MULTI_HIT,   45, BUG,           100, 20,  20      ;TWINEEDLE
+	move EFFECT_POISON_MULTI_HIT,   50, BUG,           100, 20,  20      ;TWINEEDLE
 	move EFFECT_MULTI_HIT,          25, BUG,           100, 20,   0      ;PIN_MISSILE
 	move EFFECT_DEFENSE_DOWN,        0, NORMAL,        100, 30,   0      ;LEER
 	move EFFECT_FLINCH_HIT,         60, DARK,          100, 25,  30      ;BITE
@@ -153,7 +153,7 @@ Moves1:
 	move EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE,  100, 20,   0      ;AMNESIA
 	move EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE,   80, 15,   0      ;KINESIS
 	move EFFECT_HEAL,                0, NORMAL,        100, 10,   0      ;SOFTBOILED
-	move EFFECT_JUMP_KICK,          85, FIGHTING,       90, 20,   0      ;HI_JUMP_KICK
+	move EFFECT_JUMP_KICK,         110, FIGHTING,       90, 20,   0      ;HI_JUMP_KICK
 	move EFFECT_PARALYZE,            0, NORMAL,        100, 30,   0      ;GLARE
 	move EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE,  100, 15,   0      ;DREAM_EATER
 	move EFFECT_POISON,              0, POISON,         55, 40,   0      ;POISON_GAS

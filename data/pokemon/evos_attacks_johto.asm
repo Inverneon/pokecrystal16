@@ -239,7 +239,7 @@ FeraligatrEvosAttacks:
 SentretEvosAttacks:
 	dbbw EVOLVE_LEVEL, 15, FURRET
 	db 0 ; no more evolutions
-	dbw 1, TACKLE
+	dbw 1, SCRATCH
 	dbw 5, DEFENSE_CURL
 	dbw 11, QUICK_ATTACK
 	dbw 17, FURY_SWIPES
@@ -393,13 +393,24 @@ LanturnEvosAttacks:
 	db 0 ; no more level-up moves
 
 PichuEvosAttacks:
-	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, PIKACHU
+	dbbw EVOLVE_LEVEL, 18, PIKACHU
 	db 0 ; no more evolutions
 	dbw 1, THUNDERSHOCK
 	dbw 1, CHARM
 	dbw 6, TAIL_WHIP
-	dbw 8, THUNDER_WAVE
-	dbw 11, SWEET_KISS
+	dbw 8, QUICK_ATTACK
+	dbw 12, THUNDER_WAVE
+	dbw 16, SPARK
+	dbw 20, DIG
+	dbw 24, SWEET_KISS
+	dbw 28, THUNDERBOLT
+	dbw 32, LIGHT_SCREEN
+	dbw 36, MAGNITUDE
+	dbw 40, ENCORE
+	dbw 44, BODY_SLAM
+	dbw 48, IRON_TAIL
+	dbw 52, EARTHQUAKE
+	dbw 58, THUNDER
 	db 0 ; no more level-up moves
 
 CleffaEvosAttacks:
